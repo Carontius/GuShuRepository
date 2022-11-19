@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="109-1094400_rock-paper-scissors-png-clipart-rock-paper-scissor.png" />
+    <None Remove="111-1114370_rock-paper-scissors-rock-paper-scissors-clipart.png" />
+    <None Remove="266-2667252_transparent-rock-paper-scissors-clipart-rock-paper-scissors.png" />
+    <None Remove="477918-200 - Copy.png" />
+    <None Remove="477918-200.png" />
+    <None Remove="477919-200 - Copy.png" />
+    <None Remove="477919-200.png" />
+    <None Remove="477922-200 - Copy.png" />
+    <None Remove="477922-200.png" />
+    <None Remove="download-removebg-preview.png" />
+    <None Remove="download.jpeg" />
+    <None Remove="transrock.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="477918-200 - Copy.png" />
+    <Resource Include="477918-200.png" />
+    <Resource Include="477919-200 - Copy.png" />
+    <Resource Include="477919-200.png" />
+    <Resource Include="477922-200 - Copy.png" />
+    <Resource Include="477922-200.png" />
+    <Resource Include="download-removebg-preview.png" />
+    <Resource Include="download.jpeg" />
+    <Resource Include="images\477918-200 - Copy.png" />
+    <Resource Include="images\477918-200.png" />
+    <Resource Include="images\477919-200 - Copy.png" />
+    <Resource Include="images\477919-200.png" />
+    <Resource Include="images\477922-200 - Copy.png" />
+    <Resource Include="images\477922-200.png" />
+    <Resource Include="images\R %281%29.jpg" />
+    <Resource Include="images\TheMuzzak.jpg" />
+  </ItemGroup>
+
+</Project>

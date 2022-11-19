@@ -39,14 +39,14 @@ namespace Calculadora001
         {
            // n = int.Parse( Button.ContentProperty.ToString());
             
-            TextCalcu.Text = Button.ContentStringFormatProperty.ToString();
-            MessageBox.Show(Button.ContentStringFormatProperty.ToString());
+            TextCalcu.Text += Convert.ToString(uno.Content);
+           
          
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Content = "111";
+            //MessageBox.Show();
         }
     }
 }

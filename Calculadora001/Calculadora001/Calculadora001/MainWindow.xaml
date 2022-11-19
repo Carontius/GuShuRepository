@@ -45,7 +45,7 @@
             <Button Content="5" Grid.Row="3" Grid.Column="1" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF" Click="Button_Click"/>
             <Button Content="+" Grid.Column="3" Grid.Row="4" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF"/>
             <Button Content="2" Grid.Column="1" Grid.Row="4" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF" Click="Button_Click"/>
-            <Button Content="1" Grid.Row="4" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF" Click="Button_Click"   />
+            <Button Name="uno" Content="1" Grid.Row="4" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF" Click="Button_Click"   />
             <Button Content="6" Grid.Row="3" Grid.Column="2" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF" Click="Button_Click"/>
             <Button Content="0" Grid.Row="5" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF" Click="Button_Click"/>
             <Button Content="3" Grid.Row="4" Grid.Column="2" BorderBrush="#FF7B1919" Background="#FF5A0E0E" Foreground="#FFDACFCF" Click="Button_Click"/>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Piedra_Papel_Tijeras_00/1.0.0": {
+        "runtime": {
+          "Piedra_Papel_Tijeras_00.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Piedra_Papel_Tijeras_00/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

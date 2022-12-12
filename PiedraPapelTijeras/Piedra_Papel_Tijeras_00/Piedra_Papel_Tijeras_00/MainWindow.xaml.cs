@@ -59,7 +59,7 @@ namespace Piedra_Papel_Tijeras_00
         string mail;
         int puntos;
 
-        public User(string loginUser, string loginPassword, string nombre="", string apellido = "", string alias = "", string mail = "", int puntos=0)
+        public User(string loginUser, string loginPassword, string nombre="", string apellido = "", string alias = "", string mail = "", int puntos=500)
         {
             this.loginUser = loginUser;
             this.loginPassword = loginPassword;

@@ -24,5 +24,15 @@ namespace Piedra_Papel_Tijeras_00
         {
             InitializeComponent();
         }
+
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RegisBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Registro());
+        }
     }
 }

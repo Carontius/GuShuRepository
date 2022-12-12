@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Docs\\docs\\GitHub\\GuShuRepository\\Calculadora001\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj": {}
+    "D:\\Docs\\docs\\GitHub\\GuShuRepository\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj": {}
   },
   "projects": {
-    "D:\\Docs\\docs\\GitHub\\GuShuRepository\\Calculadora001\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj": {
+    "D:\\Docs\\docs\\GitHub\\GuShuRepository\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\Calculadora001\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj",
+        "projectUniqueName": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj",
         "projectName": "Piedra_Papel_Tijeras_00",
-        "projectPath": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\Calculadora001\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj",
+        "projectPath": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj",
         "packagesPath": "C:\\Users\\Carontius\\.nuget\\packages\\",
-        "outputPath": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\Calculadora001\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\obj\\",
+        "outputPath": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual studio 2022\\Shared\\NuGetPackages"

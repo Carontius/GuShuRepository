@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FS5vBCMW7W1zrGuOg8O1UkGN03TM1Uwj0fbNr3LgORHwBwqQb/W++/EQ45RaCcT9U96vMQtRBUqOufR/ushVbA==",
+  "dgSpecHash": "xAlxICSF6X48+vQUelh/3xCHcgAUBSzVoX45wNQ67XKUbV+eCTzXOD3aTCR8fhbBgb41SZwDFDrIPFniVBdzxw==",
   "success": true,
-  "projectFilePath": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\Calculadora001\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj",
+  "projectFilePath": "D:\\Docs\\docs\\GitHub\\GuShuRepository\\PiedraPapelTijeras\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00\\Piedra_Papel_Tijeras_00.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Carontius\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\Carontius\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

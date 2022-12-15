@@ -31,28 +31,16 @@ namespace Piedra_Papel_Tijeras_00
             conexion.Open();
         }
 
-        private void LoginBtn_Click(object sender, RoutedEventArgs e)
-        {
-            //User registryobject = new User(UserNameBlock.Text, UserPassBlock.Text, FName.Text, LName.Text, alias.Text, Mail.Text);
-            string carga = "INSERT INTO cliente_data(user,pass,Fname,Lname,mail,alias) Values(@user,@pass,@Fname,@Lname,@mail,@alias)";
-            MySqlCommand insertar = new MySqlCommand(carga, conexion);
-            insertar.Parameters.Add(new MySqlParameter("@user", userbox.Text));
-            insertar.Parameters.Add(new MySqlParameter("@pass", passbox.Text));
-            insertar.Parameters.Add(new MySqlParameter("@Fname", fnamebox.Text));
-            insertar.Parameters.Add(new MySqlParameter("@Lname", lnamebox.Text));
-            insertar.Parameters.Add(new MySqlParameter("@mail", emailbox.Text));
-            insertar.Parameters.Add(new MySqlParameter("@alias", alias.Text));
-
-            insertar.ExecuteNonQuery();
-            MessageBox.Show("carga realizada");
-
-
-
-        }
-
+       
         private void BckButtom_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Login());
         }
+
+       private void RegisterBtn_Click(object sender, RoutedEventArgs e, sqlConsulta sqlConsulta) => sqlConsulta.SqlInsert(userbox.Text, passbox.Text, fnamebox.Text, lnamebox.Text, emailbox.Text);
+
+        
+
+        
     }
 }

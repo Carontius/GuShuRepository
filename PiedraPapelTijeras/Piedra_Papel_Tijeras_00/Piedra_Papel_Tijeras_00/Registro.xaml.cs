@@ -37,8 +37,33 @@ namespace Piedra_Papel_Tijeras_00
             NavigationService.Navigate(new Login());
         }
 
-       private void RegisterBtn_Click(object sender, RoutedEventArgs e, sqlConsulta sqlConsulta) => sqlConsulta.SqlInsert(userbox.Text, passbox.Text, fnamebox.Text, lnamebox.Text, emailbox.Text);
+        private void RegisterBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if ((userbox.Text != String.Empty) || (passbox.Text != String.Empty))
+            {
+                
+                MySqlCommand cmd = new MySqlCommand("select * from cliente_data where user='" + userbox.Text + "'", conexion);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    dr.Close();
+                    MessageBox.Show("El usuario ya existe intente con un nuevo alias ");
+                }
+                else
+                {
+                    dr.Close();
+                    int bonuspoints = 500;
+                    sqlConsulta sqlConsulta = new sqlConsulta();
+                    sqlConsulta.SqlInsert(userbox.Text, passbox.Text, fnamebox.Text, lnamebox.Text, bonuspoints, emailbox.Text);
 
+                }
+
+
+            }
+
+            
+
+        }
         
 
         

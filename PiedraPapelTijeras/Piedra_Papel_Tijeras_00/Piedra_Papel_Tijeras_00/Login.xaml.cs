@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+
 namespace Piedra_Papel_Tijeras_00
 {
     /// <summary>
@@ -20,6 +23,9 @@ namespace Piedra_Papel_Tijeras_00
     /// </summary>
     public partial class Login : Page
     {
+        string datasource = "Datasource=localhost;Port=3306;username=root;Password=;Database=apuestas_db";
+        MySqlConnection conexion;
+
         public Login()
         {
             InitializeComponent();
@@ -27,12 +33,34 @@ namespace Piedra_Papel_Tijeras_00
 
         private void LoginBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            if ((userboxlog.Text != String.Empty) || (passboxlog.Text != String.Empty))
+            {
+                conexion = new MySqlConnection(datasource);
+                conexion.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from cliente_data where user='" + userboxlog.Text + "'", conexion);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    dr.Close();
+                    NavigationService.Navigate(new Play());
+                }
+                else
+                {
+                    dr.Close();
+                    MessageBox.Show("No Account avilable with this username and password ");
+                }
+            }
         }
+                void RegisBtn_Click(object sender, RoutedEventArgs e)
+                {
+                    NavigationService.Navigate(new Registro());
+                }
 
-        private void RegisBtn_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Registro());
+                void DeleteBtn_Click(object sender, RoutedEventArgs e)
+                {
+
+                }
+            }
         }
-    }
-}
+    
+

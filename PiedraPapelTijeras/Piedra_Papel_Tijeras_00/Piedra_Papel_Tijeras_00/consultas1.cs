@@ -27,19 +27,19 @@ namespace Piedra_Papel_Tijeras_00
 
 
 
-        public void SqlInsert(string user, string pass, string fname="", string lname="", string email="")
+        public void SqlInsert(string user, string pass, string fname="", string lname="",int points=500 ,string email="")
         {
             conexion = new MySqlConnection(datasource);
             conexion.Open();
             
-            string carga = "INSERT INTO cliente_data(user,pass,Fname,Lname,mail) Values(@user,@pass,@Fname,@Lname,@mail)";
+            string carga = "INSERT INTO cliente_data(user,pass,Nombre,Apellido,points,Mail) Values(@user,@pass,@Fname,@Lname,@points,@mail)";
             MySqlCommand insertar = new MySqlCommand(carga, conexion);
             insertar.Parameters.Add(new MySqlParameter("@user", user));
             insertar.Parameters.Add(new MySqlParameter("@pass", pass));
             insertar.Parameters.Add(new MySqlParameter("@Fname", fname));
             insertar.Parameters.Add(new MySqlParameter("@Lname", lname));
+            insertar.Parameters.Add(new MySqlParameter("@points", points));
             insertar.Parameters.Add(new MySqlParameter("@mail", email));
-            
 
             insertar.ExecuteNonQuery();
             conexion.Close();
@@ -59,6 +59,7 @@ namespace Piedra_Papel_Tijeras_00
 
             insertar.ExecuteNonQuery();
             conexion.Close();
+            MessageBox.Show("usuario borrado");
         }
 
         public void SqlUpdate(string user, string pass, string fname = "", string lname = "", string email = "")
@@ -66,7 +67,7 @@ namespace Piedra_Papel_Tijeras_00
             conexion = new MySqlConnection(datasource);
             conexion.Open();
 
-            string carga = "UPDATE cliente_data SET(user,pass,Fname,Lname,mail) Values(@user,@pass,@Fname,@Lname,@mail) WHERE user = @user AND pass = @pass";
+            string carga = "UPDATE cliente_data SET(user,pass,Nombre,Apellido,Mail) Values(@user,@pass,@Fname,@Lname,@mail) WHERE user = @user AND pass = @pass";
             MySqlCommand insertar = new MySqlCommand(carga, conexion);
             insertar.Parameters.Add(new MySqlParameter("@user", user));
             insertar.Parameters.Add(new MySqlParameter("@pass", pass));
@@ -79,6 +80,21 @@ namespace Piedra_Papel_Tijeras_00
             conexion.Close();
         }
 
+        public void SqlSelectUser(string user)
+        {
+            conexion = new MySqlConnection(datasource);
+            conexion.Open();
+            
+            string carga = "SELECT user FROM cliente_data WHERE user = @user";
+            MySqlCommand insertar = new MySqlCommand(carga, conexion);
+            insertar.Parameters.Add(new MySqlParameter("@user", user));
+           
+
+            insertar.ExecuteNonQuery();
+            conexion.Close();
+          
+
+        }
    
     }
 }

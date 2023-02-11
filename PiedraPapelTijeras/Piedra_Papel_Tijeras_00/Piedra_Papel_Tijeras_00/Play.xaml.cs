@@ -14,15 +14,23 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Piedra_Papel_Tijeras_00
-{
+{ 
     /// <summary>
     /// Interaction logic for Play.xaml
     /// </summary>
     public partial class Play : Page
     {
-        public Play()
+        public Play(string name)
         {
             InitializeComponent();
+            P1name.Text = name;
+            P1points.Text = ;
+
+        }
+
+        private void play_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -8,14 +8,13 @@
       d:DesignHeight="600" d:DesignWidth="800"
       Title="Play">
 
-    <Grid Background="#FF04AFA3" >
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Player one" VerticalAlignment="Top" Margin="10,10,0,0" Height="17" Width="108"/>
+    <Grid Background="#CC05965F" >
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,10,0,0" Height="17" Width="76"><Run Text="Player one "/><Run Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="House" VerticalAlignment="Top" Margin="682,10,0,0" Height="17" Width="108"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="108"/>
-        <TextBlock HorizontalAlignment="Left" Margin="682,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="19" Width="96"/>
+        <TextBlock Name="P1name" HorizontalAlignment="Left" Margin="10,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="19" Width="108"/>
         <ComboBox HorizontalAlignment="Left" Margin="40,474,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,455,0,0" TextWrapping="Wrap" Text="Your bet" VerticalAlignment="Top" Height="30" Width="144"/>
-        <Button Name="play" Content="Play" HorizontalAlignment="Left" Margin="340,405,0,0" VerticalAlignment="Top" Height="90" Width="150"/>
+        <Button Name="play" Content="Play" HorizontalAlignment="Left" Margin="340,405,0,0" VerticalAlignment="Top" Height="90" Width="150" Click="play_Click"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="54,72,0,0" VerticalAlignment="Top" Width="100" Source="/477918-200.png">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/477918-200.png"/>

@@ -58,8 +58,25 @@ namespace Piedra_Papel_Tijeras_00
          
 
             insertar.ExecuteNonQuery();
+           
+            //  TO DO // deberia servir para filtrar resultados negativos
+            if (insertar.ExecuteNonQuery() == 0)
+            {
+                MessageBox.Show("usuario o password incorrectos");
+            }
+
+            else if (insertar.ExecuteNonQuery() > 0)
+            {
+                MessageBox.Show("usuario borrado");
+            }
+
+            else
+            {
+                MessageBox.Show("ocurrio algun error; dev revisar \"SqlDeleteByUser\" ");
+
+            }
             conexion.Close();
-            MessageBox.Show("usuario borrado");
+           
         }
 
         public void SqlUpdate(string user, string pass, string fname = "", string lname = "", string email = "")
@@ -77,7 +94,24 @@ namespace Piedra_Papel_Tijeras_00
 
 
             insertar.ExecuteNonQuery();
+            //  TO DO // deberia servir para filtrar resultados negativos
+            if (insertar.ExecuteNonQuery() == 0)
+            {
+                MessageBox.Show("usuario o password incorrectos");
+            }
+
+            else if (insertar.ExecuteNonQuery() > 0)
+            {
+                MessageBox.Show("usuario borrado");
+            }
+
+            else
+            {
+                MessageBox.Show("ocurrio algun error; dev revisar \"SqlUpdate\" ");
+
+            }
             conexion.Close();
+        
         }
 
         public void SqlSelectUser(string user)
@@ -91,8 +125,24 @@ namespace Piedra_Papel_Tijeras_00
            
 
             insertar.ExecuteNonQuery();
+            //  TO DO // deberia servir para filtrar resultados negativos
+            if (insertar.ExecuteNonQuery() == 0)
+            {
+                MessageBox.Show("usuario o password incorrectos");
+            }
+
+            else if (insertar.ExecuteNonQuery() > 0)
+            {
+                MessageBox.Show("usuario borrado");
+            }
+
+            else
+            {
+                MessageBox.Show("ocurrio algun error; dev revisar \"SqlSelectUser\" ");
+
+            }
             conexion.Close();
-          
+
 
         }
    

@@ -21,8 +21,9 @@ namespace Piedra_Papel_Tijeras_00
     /// <summary>
     /// Interaction logic for Login.xaml
     /// </summary>
-    public partial class Login : Page
+    public  partial class Login : Page
     {
+        
         string datasource = "Datasource=localhost;Port=3306;username=root;Password=;Database=apuestas_db";
         MySqlConnection conexion;
 
@@ -37,12 +38,15 @@ namespace Piedra_Papel_Tijeras_00
             {
                 conexion = new MySqlConnection(datasource);
                 conexion.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from cliente_data where user='" + userboxlog.Text + "'", conexion);
+                MySqlCommand cmd = new MySqlCommand("select * from cliente_data where user='" + userboxlog.Text + "' and pass='"+ passboxlog.Text+"'", conexion);
                 MySqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
                     dr.Close();
-                    NavigationService.Navigate(new Play());
+                    MessageBox.Show("Welcome user \""+ userboxlog.Text.ToUpper() + "\". ");
+                    string name = userboxlog.Text.ToUpper();
+                    NavigationService.Navigate(new Play(name));
+                    
                 }
                 else
                 {
@@ -58,7 +62,8 @@ namespace Piedra_Papel_Tijeras_00
 
                 void DeleteBtn_Click(object sender, RoutedEventArgs e)
                 {
-
+                    deleteUser dlt=new deleteUser();
+                    dlt.ShowDialog();
                 }
             }
         }

@@ -39,7 +39,7 @@ namespace Piedra_Papel_Tijeras_00
 
         private void RegisterBtn_Click(object sender, RoutedEventArgs e)
         {
-            if ((userbox.Text != String.Empty) || (passbox.Text != String.Empty))
+            if ((userbox.Text != String.Empty) && (passbox.Text != String.Empty))
             {
                 
                 MySqlCommand cmd = new MySqlCommand("select * from cliente_data where user='" + userbox.Text + "'", conexion);
@@ -55,6 +55,9 @@ namespace Piedra_Papel_Tijeras_00
                     int bonuspoints = 500;
                     sqlConsulta sqlConsulta = new sqlConsulta();
                     sqlConsulta.SqlInsert(userbox.Text, passbox.Text, fnamebox.Text, lnamebox.Text, bonuspoints, emailbox.Text);
+                    MessageBox.Show("El usuario \"" + userbox.Text + "\" a sido registrado. ");
+                    
+                    NavigationService.Navigate(new Login());
 
                 }
 

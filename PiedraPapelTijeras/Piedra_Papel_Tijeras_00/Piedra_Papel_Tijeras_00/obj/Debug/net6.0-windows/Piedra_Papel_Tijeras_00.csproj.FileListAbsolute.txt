@@ -84,3 +84,5 @@ D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\P
 D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\obj\Debug\net6.0-windows\deleteUser.g.cs
+D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\obj\Debug\net6.0-windows\deleteUser.baml

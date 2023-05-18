@@ -1,20 +1,20 @@
 ﻿Piedra_Papel_Tijeras_00
-
+1.0.0.0
 
 winexe
 C#
 .cs
-D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\obj\Debug\net6.0-windows\
+d:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\obj\Debug\net6.0-windows\
 Piedra_Papel_Tijeras_00
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\App.xaml
+d:\Docs\docs\GitHub\GuShuRepository\PiedraPapelTijeras\Piedra_Papel_Tijeras_00\Piedra_Papel_Tijeras_00\App.xaml
 51045364521
 
-81633634892
+10-2083992982
 215-1897068977
 deleteUser.xaml;Login.xaml;MainWindow.xaml;Play.xaml;Registro.xaml;
 
-False
+True
 
